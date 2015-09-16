@@ -1,5 +1,4 @@
-function F = calcForce(x)
+function F = calcForce(m, x)
     % Take current x coordinate and return force acting on mass
-    K = 1; % K is the spring constant
-    F = (-1)*K*sign(x)*abs(x);
+    F = -m*9.81*x;
 end

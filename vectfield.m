@@ -17,7 +17,7 @@ yp1=zeros(n2,n1);
 yp2=zeros(n2,n1);
 for i=1:n1
   for j=1:n2
-    ypv = feval(func,t,[y1val(i);y2val(j)]);
+    ypv = feval(func,[y1val(i);y2val(j)],t);
     yp1(j,i) = ypv(1);
     yp2(j,i) = ypv(2);
   end
