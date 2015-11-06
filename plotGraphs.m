@@ -1,25 +1,30 @@
     clf;
     hold on;
+        % Plot the vector field and ODE solutions
     
-    % Plot the vector field and ODE solutions
+    omega = 0.1;
     
-    function xdot = f(x,t)
-      % x(1) is x, x(2) x
-      k = 1;
-      g = 9.81;
-      xdot(2) = g - (k*(x(2)^2));
+    function xdot = f2(x,t)
+      % d^2Q/dt^2 = -Q/CL  -  (R/L) * (dQ/Dt)
+      C = 10;
+      L = 10;
+      R = 0.1;
+      omega = 5;
+      Vs = sin(omega*t);
+      
+      xdot(3) = ((0-x(2))/(C*L))-((R/L)*(x(3)));
+      xdot(2) = x(3)+Vs;
       xdot(1) = x(2);
-    endfunction
+     endfunction
     
-    x = lsode("f", [0;sqrt(9.81)], (t = linspace(0,10,1000)'));
+    timestep = 1000;
+    tmin = 0;
+    tmax = 1000;
     
-    %vectfield("f",0:1:10,-10:1:10);
-    
-    %p = plot(x(:,1),x(:,2), 'b-');
-    p = plot(linspace(0,10,1000),x(:,1));
-    set(p, 'LineWidth', 3);
-    
-    print b_x.png
-    
-    % print -dpdf Oscillator.pdf    
-   
+    x2 = lsode("f2", [1;1;1] , (t = linspace (tmin, tmax, timestep)') ) ;
+
+    p = plot(x2(:,1),x2(:,2), 'b-');
+    %p = plot(linspace(tmin,timestep,tmax),driver);
+    %p = plot(linspace(tmin,tmax,timestep),x2(:,1), 'b-');
+    %set(p, 'LineWidth', 3);
+    % print growthFunction3.png       
