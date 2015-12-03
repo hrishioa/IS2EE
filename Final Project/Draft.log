@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.13)  3 DEC 2015 11:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.13)  3 DEC 2015 15:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -922,15 +922,30 @@ File: CircuitPerspective.jpg Graphic file (type jpg)
 <use CircuitPerspective.jpg>
 Package pdftex.def Info: CircuitPerspective.jpg used on input line 174.
 (pdftex.def)             Requested size: 241.74324pt x 111.03845pt.
- <Oscilloscope1.png, id=32, 803.0pt x 481.8pt>
-File: Oscilloscope1.png Graphic file (type png)
+LaTeX Font Info:    Try loading font information for T1+txtt on input line 181.
 
-<use Oscilloscope1.png>
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/txfonts/t1txtt.fd
+File: t1txtt.fd 2000/12/15 v3.1
+)
+Overfull \hbox (98.4561pt too wide) in paragraph at lines 181--181
+\T1/txtt/m/n/9 https://github.com/hrishioa/IS2EE/tree/master/Final%20Project/Ra
+w%20Data| 
+ []
+
+<Oscilloscope1.png, id=32, 803.0pt x 481.8pt>
+File: Oscilloscope1.png Graphic file (type png)
+ <use Oscilloscope1.png>
 Package pdftex.def Info: Oscilloscope1.png used on input line 185.
 (pdftex.def)             Requested size: 241.74324pt x 145.04837pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+Overfull \hbox (112.68506pt too wide) in paragraph at lines 190--190
+\T1/txtt/m/n/9 https://github.com/hrishioa/IS2EE/blob/master/Final%20Project/ch
+uaCircuit.m| 
+ []
 
 <DoubleScroll.jpg, id=33, 1040.88875pt x 780.9175pt>
 File: DoubleScroll.jpg Graphic file (type jpg)
@@ -953,19 +968,19 @@ Package pdftex.def Info: MATLAB.png used on input line 204.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3 <./CircuitTop.jpg> <./CircuitPerspective.jpg> <./Oscilloscope1.png> <./Doub
-leScroll.jpg>] <RightAttractor.jpg, id=39, 1040.88875pt x 780.9175pt>
+leScroll.jpg>] <RightAttractor.jpg, id=40, 1040.88875pt x 780.9175pt>
 File: RightAttractor.jpg Graphic file (type jpg)
 
 <use RightAttractor.jpg>
 Package pdftex.def Info: RightAttractor.jpg used on input line 213.
 (pdftex.def)             Requested size: 100.30925pt x 75.24843pt.
- <LeftAttractor.jpg, id=40, 1040.88875pt x 780.9175pt>
+ <LeftAttractor.jpg, id=41, 1040.88875pt x 780.9175pt>
 File: LeftAttractor.jpg Graphic file (type jpg)
 
 <use LeftAttractor.jpg>
 Package pdftex.def Info: LeftAttractor.jpg used on input line 216.
 (pdftex.def)             Requested size: 100.30925pt x 75.24843pt.
- <XYagainstT.png, id=41, 826.7688pt x 557.9244pt>
+ <XYagainstT.png, id=42, 826.7688pt x 557.9244pt>
 File: XYagainstT.png Graphic file (type png)
 
 <use XYagainstT.png>
@@ -975,7 +990,7 @@ Package pdftex.def Info: XYagainstT.png used on input line 234.
 Underfull \vbox (badness 4181) has occurred while \output is active []
 
 
-<MyRandImage.png, id=42, 702.625pt x 702.625pt>
+<MyRandImage.png, id=43, 702.625pt x 702.625pt>
 File: MyRandImage.png Graphic file (type png)
  <use MyRandImage.png>
 Package pdftex.def Info: MyRandImage.png used on input line 253.
@@ -984,69 +999,57 @@ Package pdftex.def Info: MyRandImage.png used on input line 253.
 Underfull \vbox (badness 3471) has occurred while \output is active []
 
  [4 <./ChaosGraph1.png> <./MATLAB.png> <./RightAttractor.jpg> <./LeftAttractor.
-jpg> <./XYagainstT.png>] [5 <./MyRandImage.png>] <R.png, id=53, 702.625pt x 702
+jpg> <./XYagainstT.png>] [5 <./MyRandImage.png>] <R.png, id=54, 702.625pt x 702
 .625pt>
 File: R.png Graphic file (type png)
 
 <use R.png>
 Package pdftex.def Info: R.png used on input line 294.
 (pdftex.def)             Requested size: 75.23003pt x 75.23051pt.
- <PR.png, id=54, 702.625pt x 702.625pt>
+ <PR.png, id=55, 702.625pt x 702.625pt>
 File: PR.png Graphic file (type png)
  <use PR.png>
 Package pdftex.def Info: PR.png used on input line 297.
 (pdftex.def)             Requested size: 75.23003pt x 75.23051pt.
 
-<TR.png, id=55, 702.625pt x 702.625pt>
+<TR.png, id=56, 702.625pt x 702.625pt>
 File: TR.png Graphic file (type png)
  <use TR.png>
 Package pdftex.def Info: TR.png used on input line 300.
 (pdftex.def)             Requested size: 75.23003pt x 75.23051pt.
 
-<PRzoomed.png, id=56, 369.38pt x 318.18875pt>
+<PRzoomed.png, id=57, 369.38pt x 318.18875pt>
 File: PRzoomed.png Graphic file (type png)
  <use PRzoomed.png>
 Package pdftex.def Info: PRzoomed.png used on input line 308.
 (pdftex.def)             Requested size: 241.74324pt x 208.24278pt.
-
-
-LaTeX Warning: Citation `lyap' undefined on input line 317.
-
-(./Draft.bbl
-LaTeX Font Info:    Try loading font information for T1+txtt on input line 26.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/txfonts/t1txtt.fd
-File: t1txtt.fd 2000/12/15 v3.1
-))
+ (./Draft.bbl)
 - LAST -
-Extra skip:34.92352pt
-Left:606.21504pt/0.12pt
-Right:569.46301pt/1.9485pt
-Output:597.83902pt
+Extra skip:3.96852pt
+Left:594.21504pt/2.165pt
+Right:590.46301pt/1.9485pt
+Output:593.33902pt
 
-[6 <./R.png> <./PR.png> <./TR.png> <./PRzoomed.png>] (./Draft.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+[6 <./R.png> <./PR.png> <./TR.png> <./PRzoomed.png>] (./Draft.aux) ) 
 Here is how much of TeX's memory you used:
- 7959 strings out of 493089
- 114373 string characters out of 6134841
- 204902 words of memory out of 5000000
- 11239 multiletter control sequences out of 15000+600000
- 48055 words of font info for 88 fonts, out of 8000000 for 9000
+ 7992 strings out of 493089
+ 114802 string characters out of 6134841
+ 200011 words of memory out of 5000000
+ 11270 multiletter control sequences out of 15000+600000
+ 60797 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,9n,40p,840b,353s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/loc
-al/texlive/2015/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/txfonts/txex.pfb></usr/local/texlive/2015/texmf-dist
-/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2015/texmf-dist/fonts/
-type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/
-times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr
-i8a.pfb>
-Output written on Draft.pdf (6 pages, 1578502 bytes).
+{/usr/local
+/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2015/texmf-dist
+/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2015/texmf-dist/fonts
+/type1/public/txfonts/txex.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
+public/txfonts/txsy.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/tim
+es/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.
+pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Draft.pdf (6 pages, 1579102 bytes).
 PDF statistics:
  95 PDF objects out of 1000 (max. 8388607)
  43 compressed objects within 1 object stream

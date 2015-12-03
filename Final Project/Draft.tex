@@ -63,7 +63,7 @@ A dynamical system can be considered chaotic if it satisfies the following crite
 \item It is topologically mixed, i.e. the orbits frequently oscillate between topological states.
 \item It is sensitive to initial conditions.
 \end{itemize}
-Here, we exploit the first and the third characteristics in order to generate random numbers from an electrical circuit modelling a chaos attractor. In the background, we will be looking at how the circuit works, along with details specific to the implementation used here. We then consider the transformations applied to the raw data collected, along with mathematical reasons for these transformations. Finally, we perform three separate tests of randomness on the data collected, and compare the results with those of a known PRNG and TRNG each.
+Here, we exploit the first and the third characteristics in order to generate random numbers from an electrical circuit modelling a chaos attractor. In the background, we will be looking at how the circuit works, along with details specific to the implementation used here. We then consider the transformations applied to the raw data collected, along with mathematical reasons for these transformations. Finally, we perform three separate tests of randomness on the data collected, and compare the results with those of a known PRNG (Pseudo-Random Number Generator) and TRNG (True Random Number Generator) each.
 
 \section{Background}
 
@@ -81,7 +81,7 @@ Chua's Circuit ~\cite{mats} was conceptualised by Leon Chua in 1983. Brought to 
 
 The Chua Diode has a non-linear Voltage-Current characteristic, which is most commonly modelled as seen in figure 1 (b). The inductors, capacitors and resistance used are of standard values. The Chua Diode is the only active element in this circuit, i.e. it is the only element capable to injecting energy into it.
 
-Using the Laplace transform and Kirchhoff's Laws, the circuit can be modelled by a three-dimensional system of Ordinary Differential Equations (ODEs). Considering g(x) to be the piecewise function that models the IV characteristic of the Chua Diode, we get the following:
+The circuit can be modelled by a three-dimensional system of Ordinary Differential Equations (ODEs). Considering g(x) to be the piecewise function that models the IV characteristic of the Chua Diode, we get the following:
 
 \begin{equation}
  g = 
@@ -106,7 +106,7 @@ V_2 = \frac{V_1 - V_2 + Ri_L}{RC_2}
 i_L = \frac{-V_2}{L}
 \end{equation}
 
-We will soon model these equations in MATLAB and consider the system from a mathematical perspective, once the details of implementation are made clear.
+We will soon model these equations in MATLAB and consider the output of the circuit from a mathematical perspective, once the details of implementation are made clear.
 
 \subsection{Implementation}
 
@@ -153,7 +153,7 @@ It is possible to connect two such circuits in parallel which are tuned such tha
 \endminipage
 \end{figure}
 
-The rest of the components are sufficiently simple that we can implement them using off-the-shelf, sometimes low precision components (the detailed precision report for the components involved can be found in the Supplment). The completed schematic can be seen in Figure 4. There are two variable resistors we use for tuning. The first is R10, which controls the inductance value of the simulated inductor. The second is R and controls the chaotic properties of the circuit.
+The rest of the components are sufficiently simple that we can implement them using off-the-shelf, sometimes low precision components. The completed schematic can be seen in Figure 4. There are two variable resistors we use for tuning. The first is R10, which controls the inductance value of the simulated inductor. The second is R and controls the chaotic properties of the circuit.
 
 \begin{figure}[H]
 \caption{Complete Circuit Schematic}
@@ -178,7 +178,7 @@ In order to collect data for the X, Y and Z axes, the voltage across $C_1$, $C_2
 
 \section{Data Collection}
 
-Once the circuit was completed, data was collected from the X and Y axes, through the use of an oscilloscope. The collected waveform - before it was exported - can be seen in figure 7.  
+Once the circuit was completed, data was collected from the X and Y axes, through the use of an oscilloscope\footnote{The collected data can be found at \url{https://github.com/hrishioa/IS2EE/tree/master/Final\%20Project/Raw\%20Data}}. The collected waveform - before it was exported - can be seen in figure 7.  
 
 \begin{figure}[H]
 \caption{Oscilloscope Screen Capture}
@@ -187,8 +187,8 @@ Once the circuit was completed, data was collected from the X and Y axes, throug
 
 An analog oscilloscope was used to visualise the double scroll attractor, and this can be seen in Figure 8. A graph (Figure 9 (a)) was plotted from collected values, to check the integrity of the numbers, and the same scroll was found, with the same parameters. 
 
-Next, we compare the observed values to a mathematical model generated using equations (2), (3), and (4), the code for which can be found in the supplement. Figure 9 (b) demonstrates that the underlying model is still the same. We can now perform the final calibration using the observed and expected operational parameters (span, position of attractors etc).
-Having confirmed observational values from two independent oscilloscopes and the mathematical model, we continue to the analysis of the data.
+Next, we compare the observed values to a mathematical model generated using equations (2), (3), and (4)\footnote{The code for the MATLAB simulation can be found at \url{https://github.com/hrishioa/IS2EE/blob/master/Final\%20Project/chuaCircuit.m}}. Figure 9 (b) demonstrates that the underlying model is still the same. We can now perform the final calibration using the observed and expected operational parameters (span, position of attractors etc).
+Having confirmed observational values from two independent oscilloscopes and the mathematical model, we continue on to the analysis of the data.
 
 \begin{figure}[H]
 \caption{Visualisation of the Lorentz attractor}
@@ -260,7 +260,7 @@ It was interesting for me to find in my research that randomness in a data strea
 For comparison, we have selected two bitstreams of the same size. The first stream is generated from a PRNG in the programming language R. R uses a mathematical function called the Mersenne-Twister. The Mersenne-Twister ~\cite{mako} is one of the most widely used PRNGs in the world. For the scope of this paper, we can assume that it will provide numbers of a certain quality, surpassing which we can consider our generator to be of PRNG quality. The second stream is from the TRNG used by http://random.org. The website uses a TRNG of reasonable reputation which makes use of atmospheric noise captured around the world using radio telescopes. We will use this as our stream of true random numbers as well as a benchmark against which the generator will be tested.
 
 \subsection{Testing Methodology}
-We will use three different tests to compare the streams of data which we will call TR, PR and R. R will refer to bitstream we generated using the circuit, TR to the numbers from the TRNG, and PR to the numbers from the PRNG. We will not explore in detail how the tests work, but we will move forward with the assumption that a similar score in the tests refers to a similar degree of confidence in the randomness of the numbers. The three tests are as follows:
+We will use three different tests to compare the streams of data which we will call TR, PR and R. R will refer to the bitstream we generated using the circuit, TR to the numbers from the TRNG, and PR to the numbers from the PRNG. We will not explore in detail how the tests work, but we will move forward with the assumption that a similar score in the tests refers to a similar degree of confidence in the randomness of the numbers. The three tests are as follows:
 
 \begin{itemize}
 \item Bartel's Test for Randomness - this is an implementation of the Ranked Version of the Von Neumann test for Randomness. This is a statistical method for testing randomness that is part of the state-of-the-art random test suite diehard ~\cite{bart}.
@@ -274,9 +274,9 @@ Bartel's test revealed - for the alternate hypothesis of non-randomness - the fo
 \item \emph{PR}: statistic = -0.2327, p-value = 0.816
 \item \emph{TR}: statistic = 0.7518, p-value = 0.4522
 \end{itemize}
-The statistic measures the probability of a trend or oscillation in consecutive numbers. The difference in the statistic values arise from the nature of the underlying processes that generate the data being used. For the scope of this paper, we will simply consider the p-values to evaluate whether there is enough evidence to reject the null-hypothesis that the numbers are random.
+The statistic measures the probability of a trend or oscillation in consecutive numbers. The difference in the statistic values arise from the nature of the underlying processes that generate the data being used. For the scope of this paper, we will simply consider the p-values to evaluate whether there is enough evidence to reject the null-hypothesis that the numbers are random. Bartel's test does not identify either data stream as nonrandom, since the p-values are considerably high. It can be noted that the bitstream performs better than the two generators here. 
 
-Bartel's test does not identify either data stream as nonrandom. Considering Shannon Entropy, we look for the entropy scores of the data streams:
+Next, considering Shannon Entropy we look for the entropy scores of the data streams:
 
 \begin{itemize}
 \item \emph{R} : entropy = 8.466952
@@ -284,7 +284,7 @@ Bartel's test does not identify either data stream as nonrandom. Considering Sha
 \item \emph{TR}: entropy = 8.384804
 \end{itemize}
 
-The entropy test classifies the three samples as having a high amount of entropy, with the generated sample having the highest amount. The PRNG output scores higher than those from the TRNG, but this can be explained since pseudo-random number generators have been designed to imitate high entropy output. We are more interested in the comparison between the TRNG and the circuit-based generator, where the generator succeeds in creating a stream of higher entropy than the PRNG and the TRNG.
+The entropy test classifies the three samples as having a high amount of entropy, with the bit stream R having the highest amount. The PRNG output scores higher than those from the TRNG, but this can be explained since pseudo-random number generators have been designed to imitate high entropy output. We are more interested in the comparison between the TRNG and the circuit-based generator, where the generator succeeds in creating a stream of higher entropy than the TRNG as well as the PRNG.
 
 Finally, we plot images of the three data streams for visual comparison (figure 13).
 
@@ -301,7 +301,7 @@ Finally, we plot images of the three data streams for visual comparison (figure 
 \endminipage
 \end{figure}
 
-The astute observer (perhaps the ability to zoom-and-enhance) will notice that there are some visual patterns present in (b), but (a) and (c) contain no discernible patterns. A close-up of these patterns can be seen in Figure 14, although it must be pointed out that these are not recurring patterns but simply features in the data that are easily identified, and their presence while diminishing the randomness in a bit stream doesn't make it predictable enough to be considered nonrandom.
+The astute observer (perhaps the ability to zoom-and-enhance) will notice that there are some visual patterns present in (b), but (a) and (c) contain no discernible patterns. A close-up of these patterns can be seen in Figure 14, although it must be pointed out that these are not recurring patterns. They are simply features in the data that are easily identified, and their presence - while diminishing the randomness in the output - does not make it predictable enough to be considered nonrandom.
 
 \begin{figure}[H]
 \caption{4x zoom of PRNG output}
@@ -314,12 +314,8 @@ The tests we have performed are by no means conclusive, and neither are the samp
 
 Passing further tests, the circuit and the accompanying generator have huge potential in security related applications where a source of high-quality random numbers are required, with a considerable number of advantages over existing systems. The entire circuit can be etched in Silicon, provides shorter start-up times, is relatively immune to noise and malicious interference, and - most importantly - does not rely on the obscurity of its model for unpredictability. As we have seen in many cases ~\cite{knuth}, this kind of security through obscurity is eventually bound to fail.
 
-As for further research, I was curious to consider the Lyapunov exponent ~\cite{lyap} of the system to measure the highest possible bitrate that can be achieved, and how an increase in sampling frequency affects the randomness of the bits so obtained. this can possibly be done using an experimental setup where an embedded processor is tasked with increasing the bitrate gradually while measuring the entropy of the resulting bits. It would be interesting to explore the nature of the Lyapunov exponent, and how this relates to the physical implementation of the circuit.
+As for further research, I was curious to consider the Lyapunov exponent ~\cite{lyap} of the system to measure the highest possible bitrate that can be achieved, and how an increase in sampling frequency affects the randomness of the bits so obtained. It would be interesting to explore the nature of the Lyapunov exponent, and how this relates to the physical implementation of the circuit.
 
 \bibliography{export}
-
-\newpage
-
-\section{Supplement}
 
 \end{document}

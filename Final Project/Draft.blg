@@ -14,48 +14,49 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: export.bib
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
 Warning--No journal in bart
+Warning--No journal in lyap
 Warning--No journal in mako
 Warning--No journal in mats
 Warning--No journal in shan
-You've used 7 entries,
+You've used 8 entries,
             6951 wiz_defined-function locations,
-            1319 strings with 11534 characters,
-and the built_in function-call counts, 11528 in all, are:
-= -- 1475
-> -- 84
-< -- 451
-+ -- 434
-- -- 14
-* -- 702
-:= -- 1964
-add.period$ -- 33
-call.type$ -- 7
-change.case$ -- 121
+            1326 strings with 11691 characters,
+and the built_in function-call counts, 13701 in all, are:
+= -- 1746
+> -- 103
+< -- 560
++ -- 560
+- -- 16
+* -- 848
+:= -- 2367
+add.period$ -- 37
+call.type$ -- 8
+change.case$ -- 138
 chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 267
-empty$ -- 523
-format.name$ -- 108
-if$ -- 2312
+cite$ -- 21
+duplicate$ -- 327
+empty$ -- 599
+format.name$ -- 140
+if$ -- 2713
 int.to.chr$ -- 0
-int.to.str$ -- 21
+int.to.str$ -- 24
 missing$ -- 0
-newline$ -- 172
-num.names$ -- 56
-pop$ -- 189
+newline$ -- 198
+num.names$ -- 64
+pop$ -- 216
 preamble$ -- 1
-purify$ -- 28
+purify$ -- 32
 quote$ -- 0
-skip$ -- 921
+skip$ -- 1054
 stack$ -- 0
-substring$ -- 495
-swap$ -- 185
-text.length$ -- 26
+substring$ -- 633
+swap$ -- 219
+text.length$ -- 28
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 688
-warning$ -- 4
-while$ -- 39
+type$ -- 768
+warning$ -- 5
+while$ -- 51
 width$ -- 0
-write$ -- 189
-(There were 4 warnings)
+write$ -- 224
+(There were 5 warnings)

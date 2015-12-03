@@ -30,6 +30,34 @@ Bartels, R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Dieci%
+, Russel%
+\BCBL {}\ \BBA {} Vleck%
+}{%
+Dieci%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1997}}%
+}]{%
+lyap}
+\APACinsertmetastar {%
+lyap}%
+\begin{APACrefauthors}%
+Dieci, L.%
+, Russel, R\BPBI D.%
+\BCBL {}\ \BBA {} Vleck, E\BPBI S\BPBI V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1997}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {On the Computation of Lyapunov Exponents for Continuous
+  Dynamical Systems} {On the computation of lyapunov exponents for continuous
+  dynamical systems}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{}{34}{1}{402--423}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Knuth%
 }{%
 Knuth%
