@@ -1,0 +1,186 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Bartels%
+}{%
+Bartels%
+}{%
+{\protect \APACyear {1982}}%
+}]{%
+bart}
+\APACinsertmetastar {%
+bart}%
+\begin{APACrefauthors}%
+Bartels, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1982}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The Rank Version of von Neumann's Ratio Test for
+  Randomness} {The rank version of von neumann's ratio test for
+  randomness}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{}{77}{377}{40--46}.
+\newblock
+\begin{APACrefURL} [{2015-11-24}]\url{http://www.jstor.org/stable/2287767}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.2307/2287767} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Knuth%
+}{%
+Knuth%
+}{%
+{\protect \APACyear {1973}}%
+}]{%
+knuth}
+\APACinsertmetastar {%
+knuth}%
+\begin{APACrefauthors}%
+Knuth, D\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1973}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Super-Random Number Generator} {Super-random number
+  generator}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {The Art of Computer Programming} {The art of computer
+  programming}\ (\BPGS\ 100--150).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Makotor%
+\ \BBA {} Takuji%
+}{%
+Makotor%
+\ \BBA {} Takuji%
+}{%
+{\protect \APACyear {1998}}%
+}]{%
+mako}
+\APACinsertmetastar {%
+mako}%
+\begin{APACrefauthors}%
+Makotor, M.%
+\BCBT {}\ \BBA {} Takuji, N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1998}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Mersenne Twister: A 623-dimensionally equidistributed
+  uniform pseudorandom number generator} {Mersenne twister: A 623-dimensionally
+  equidistributed uniform pseudorandom number generator}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{}{8}{1}{3--30}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Matsumoto%
+}{%
+Matsumoto%
+}{%
+{\protect \APACyear {1984}}%
+}]{%
+mats}
+\APACinsertmetastar {%
+mats}%
+\begin{APACrefauthors}%
+Matsumoto, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1984}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A Chaotic Attractor from Chua's Circuit} {A chaotic
+  attractor from chua's circuit}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{}{31}{12}{1055--1058}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Shannon%
+}{%
+Shannon%
+}{%
+{\protect \APACyear {2001}}%
+}]{%
+shan}
+\APACinsertmetastar {%
+shan}%
+\begin{APACrefauthors}%
+Shannon, C\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2001}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A Mathematical Theory of Communication} {A mathematical
+  theory of communication}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{}{5}{1}{3--55}.
+\newblock
+\begin{APACrefURL} [{2015-11-24}]\url{http://doi.acm.org/10.1145/584091.584093}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1145/584091.584093} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Siderskiy%
+}{%
+Siderskiy%
+}{%
+{\protect \APACyear {2000}}%
+}]{%
+side}
+\APACinsertmetastar {%
+side}%
+\begin{APACrefauthors}%
+Siderskiy, V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2000}{}{}.
+\newblock
+\APACrefbtitle {The Antoniou inductance-Simulation Circuit Derivation.} {The
+  antoniou inductance-simulation circuit derivation.}
+\newblock
+\APACaddressPublisher{}{Chua Circuits (website)}.
+\newblock
+\begin{APACrefURL} [{2015-11-24}]\url{http://www.chuacircuits.com/PDFs/Antoniou
+  Inductance-Simulation Circuit.pdf} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+W.K%
+}{%
+W.K%
+}{%
+{\protect \APACyear {2003}}%
+}]{%
+w.k_}
+\APACinsertmetastar {%
+w.k_}%
+\begin{APACrefauthors}%
+W.K, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2003}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Negative Impedance Conversion} {Negative impedance
+  conversion}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {The Circuits and Filters Handbook} {The circuits and
+  filters handbook}\ (\BPGS\ 396--397).
+\newblock
+\APACaddressPublisher{}{{CRC} Press}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

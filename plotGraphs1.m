@@ -24,9 +24,9 @@
     
     
     p = plot(x2(:,1),x2(:,2), 'b-');
-    %p = plot(linspace(tmin,tmax,timestep),x2(:,1), 'b-');
-    %set(p, 'LineWidth', 3);
-    % print growthFunction3.png    
+    % p = plot(linspace(tmin,tmax,timestep),x2(:,1), 'b-');
+    % set(p, 'LineWidth', 3);
+    % print linearDecay.pdf    
     
     % print -dpdf Oscillator.pdf    
    
